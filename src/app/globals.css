@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --rausch: #ff385c;
+  --ink: #222222;
+  --muted: #6a6a6a;
+  --line: #dddddd;
+  --background: #ffffff;
+  --brand: #1c4534;
+  --cream: #f4efe6;
+  --clay: #b85c3c;
+}
+
+@theme inline {
+  --color-rausch: var(--rausch);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-background: var(--background);
+  --color-brand: var(--brand);
+  --color-cream: var(--cream);
+  --color-clay: var(--clay);
+  --font-sans: var(--font-nunito);
+  --font-serif: var(--font-fraunces);
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--background);
+  color: var(--ink);
+  font-family: var(--font-nunito), "Nunito", sans-serif;
+}
+
+::selection {
+  background: #ff385c;
+  color: #ffffff;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0.55;
+}
