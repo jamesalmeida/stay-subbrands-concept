@@ -9,8 +9,8 @@ import {
   type ReactNode,
 } from "react";
 
-const STORAGE_KEY = "culver-gardens-wishlist";
-const CHANGE_EVENT = "culver-gardens-wishlist-change";
+const STORAGE_KEY = "jackson-commons-wishlist";
+const CHANGE_EVENT = "jackson-commons-wishlist-change";
 
 type WishlistContextValue = {
   ids: string[];

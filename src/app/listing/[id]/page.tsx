@@ -60,14 +60,15 @@ async function ListingDetail({ params }: { params: Promise<{ id: string }> }) {
           </p>
           {listing.brandId ? (
             <Link
-              href="/brand/culver-gardens"
+              href="/brand/jackson-commons"
               className="mt-5 flex items-center gap-3 rounded-2xl bg-cream p-4"
             >
               <BrandMark className="h-11 w-11 text-base" />
               <span>
-                <span className="block font-semibold text-brand">Part of Culver Gardens</span>
+                <span className="block font-semibold text-brand">Part of Jackson Commons</span>
                 <span className="block text-sm text-[#444]">
-                  One host, several homes, one standard. See the collection.
+                  One host, several homes — several right next to Jackson Market with a shared
+                  garden patio. See the collection.
                 </span>
               </span>
             </Link>

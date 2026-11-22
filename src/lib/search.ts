@@ -1,4 +1,4 @@
-import { CULVER_GARDENS_ID } from "@/data/brand";
+import { JACKSON_COMMONS_ID } from "@/data/brand";
 import { listings, type Listing } from "@/data/listings";
 
 export const SAMPLE_CITIES = [
@@ -22,7 +22,8 @@ export function searchListings(where: string): Listing[] {
   const query = where.trim().toLowerCase();
   if (query.length < 2) return [];
   return listings.filter((listing) => {
-    const brand = listing.brandId === CULVER_GARDENS_ID ? "culver gardens" : "";
+    const brand =
+      listing.brandId === JACKSON_COMMONS_ID ? "jackson commons jackson market" : "";
     const haystack = [
       listing.city,
       listing.neighborhood,
@@ -38,19 +39,21 @@ export function searchListings(where: string): Listing[] {
   });
 }
 
-export function shouldShowCulverGardens(where: string, results: Listing[]): boolean {
-  const hasBrand = results.some((listing) => listing.brandId === CULVER_GARDENS_ID);
+export function shouldShowJacksonCommons(where: string, results: Listing[]): boolean {
+  const hasBrand = results.some((listing) => listing.brandId === JACKSON_COMMONS_ID);
   if (!hasBrand || results.length === 0) return false;
-  if (where.trim().toLowerCase().includes("culver")) return true;
+  const normalized = where.trim().toLowerCase();
+  if (normalized.includes("culver") || normalized.includes("jackson")) return true;
   return results.every((listing) => listing.city === "Culver City");
 }
 
 export function orderResults(where: string, results: Listing[]): Listing[] {
-  const pinBrand = where.trim().toLowerCase().includes("culver");
+  const normalized = where.trim().toLowerCase();
+  const pinBrand = normalized.includes("culver") || normalized.includes("jackson");
   return [...results].sort((a, b) => {
     if (pinBrand) {
-      const brandA = a.brandId === CULVER_GARDENS_ID ? 1 : 0;
-      const brandB = b.brandId === CULVER_GARDENS_ID ? 1 : 0;
+      const brandA = a.brandId === JACKSON_COMMONS_ID ? 1 : 0;
+      const brandB = b.brandId === JACKSON_COMMONS_ID ? 1 : 0;
       if (brandA !== brandB) return brandB - brandA;
     }
     return b.rating - a.rating;

@@ -214,7 +214,7 @@ export function Header() {
         </form>
         <div className="flex items-center justify-end gap-1">
           <Link
-            href="/brand/culver-gardens"
+            href="/brand/jackson-commons"
             className="hidden rounded-full px-4 py-3 text-sm font-semibold hover:bg-neutral-100 xl:inline"
           >
             Host a collection
@@ -341,7 +341,7 @@ function MenuButton({
         >
           <MenuLink href="/login">Log in</MenuLink>
           <MenuLink href="/wishlists">Wishlists</MenuLink>
-          <MenuLink href="/brand/culver-gardens">Culver Gardens collection</MenuLink>
+          <MenuLink href="/brand/jackson-commons">Jackson Commons collection</MenuLink>
           <p className="px-4 py-3 text-xs text-muted">Concept mockup. No account is created.</p>
         </div>
       ) : null}
@@ -349,7 +349,7 @@ function MenuButton({
   );
 }
 
-function MenuLink({ href, children }: { href: "/login" | "/wishlists" | "/brand/culver-gardens"; children: string }) {
+function MenuLink({ href, children }: { href: "/login" | "/wishlists" | "/brand/jackson-commons"; children: string }) {
   return (
     <Link href={href} role="menuitem" className="block px-4 py-3 text-sm font-semibold hover:bg-neutral-50">
       {children}

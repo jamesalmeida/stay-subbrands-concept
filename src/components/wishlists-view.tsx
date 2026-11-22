@@ -18,7 +18,7 @@ export function WishlistsView() {
         </span>
         <p className="mt-4 text-lg font-semibold">No saved homes yet</p>
         <p className="mx-auto mt-2 max-w-sm text-sm text-muted">
-          Tap the heart on a stay. Culver Gardens homes are a good place to start.
+          Tap the heart on a stay. Jackson Commons homes are a good place to start.
         </p>
         <Link
           href="/search?where=Culver%20City"

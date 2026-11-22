@@ -37,7 +37,7 @@ async function HomeResults({
         <div className="py-20 text-center">
           <p className="text-xl font-semibold">No sample stays in {label} yet</p>
           <p className="mx-auto mt-2 max-w-md text-muted">
-            This catalog is a Los Angeles set built for the Culver Gardens pitch. Try Gardens,
+            This catalog is a Los Angeles set built for the Jackson Commons pitch. Try Gardens,
             Beachfront, or all homes.
           </p>
           <Link href="/" className="mt-5 inline-block font-semibold underline">

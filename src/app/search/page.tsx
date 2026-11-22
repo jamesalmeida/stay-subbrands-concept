@@ -7,7 +7,7 @@ import {
   orderResults,
   resultsHeading,
   searchListings,
-  shouldShowCulverGardens,
+  shouldShowJacksonCommons,
   SAMPLE_CITIES,
 } from "@/lib/search";
 import type { Metadata } from "next";
@@ -52,7 +52,7 @@ async function SearchResults({
   const matches = searchListings(where);
   const results = orderResults(where, matches);
   const heading = resultsHeading(where, results);
-  const showBrand = shouldShowCulverGardens(where, results);
+  const showBrand = shouldShowJacksonCommons(where, results);
   const range = formatStayRange(checkin, checkout);
   const guests = guestSummary(adults, children, infants);
   const summary = [range, guests].filter(Boolean).join(" · ");
@@ -72,7 +72,7 @@ async function SearchResults({
         <div className="py-10">
           <p className="max-w-xl text-[15px] leading-6">
             {where.trim()
-              ? "Nothing in this demo catalog matches that search. Try a neighborhood, or open Culver City to see Culver Gardens."
+              ? "Nothing in this demo catalog matches that search. Try a neighborhood, or open Culver City to see Jackson Commons."
               : "Type a destination. “Culver City” brings up the host collection."}
           </p>
           <div className="mt-5 flex flex-wrap gap-2">

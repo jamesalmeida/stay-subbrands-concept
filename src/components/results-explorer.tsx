@@ -2,18 +2,18 @@
 
 import { ListingGrid } from "@/components/listing-grid";
 import type { Listing } from "@/data/listings";
-import { CULVER_GARDENS_ID } from "@/data/brand";
+import { JACKSON_COMMONS_ID } from "@/data/brand";
 import { useMemo, useState } from "react";
 
 export function ResultsExplorer({ listings }: { listings: Listing[] }) {
   const [brandOnly, setBrandOnly] = useState(false);
   const [under250, setUnder250] = useState(false);
-  const hasBrand = listings.some((listing) => listing.brandId === CULVER_GARDENS_ID);
+  const hasBrand = listings.some((listing) => listing.brandId === JACKSON_COMMONS_ID);
 
   const shown = useMemo(
     () =>
       listings.filter((listing) => {
-        if (brandOnly && listing.brandId !== CULVER_GARDENS_ID) return false;
+        if (brandOnly && listing.brandId !== JACKSON_COMMONS_ID) return false;
         if (under250 && listing.price > 250) return false;
         return true;
       }),
@@ -34,7 +34,7 @@ export function ResultsExplorer({ listings }: { listings: Listing[] }) {
         </FilterChip>
         {hasBrand ? (
           <FilterChip active={brandOnly} onClick={() => setBrandOnly((value) => !value)}>
-            Culver Gardens
+            Jackson Commons
           </FilterChip>
         ) : null}
         <FilterChip active={under250} onClick={() => setUnder250((value) => !value)}>

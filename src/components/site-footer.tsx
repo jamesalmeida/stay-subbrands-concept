@@ -8,7 +8,8 @@ export function SiteFooter() {
           <p className="font-semibold text-ink">Concept mockup, not affiliated with Airbnb.</p>
           <p className="mt-2 max-w-xl">
             Fictional listings, hosts, and reviews. Home photography is stock from Unsplash, used
-            under the Unsplash License. No booking is real.
+            under the Unsplash License, alongside Jackson Market &amp; Deli photos from Google Maps.
+            No booking is real.
           </p>
         </div>
         <div className="flex flex-wrap gap-x-4 gap-y-2 font-semibold text-ink">
@@ -18,8 +19,8 @@ export function SiteFooter() {
           <Link href="/search?where=Culver%20City" className="underline-offset-2 hover:underline">
             Culver City
           </Link>
-          <Link href="/brand/culver-gardens" className="underline-offset-2 hover:underline">
-            Culver Gardens
+          <Link href="/brand/jackson-commons" className="underline-offset-2 hover:underline">
+            Jackson Commons
           </Link>
           <Link href="/wishlists" className="underline-offset-2 hover:underline">
             Wishlists

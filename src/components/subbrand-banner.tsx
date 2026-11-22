@@ -1,13 +1,13 @@
 import { BrandMark } from "@/components/brand-mark";
-import { culverGardens, culverGardensHomes, culverGardensStats } from "@/data/brand";
+import { jacksonCommons, jacksonCommonsHomes, jacksonCommonsStats } from "@/data/brand";
 import { formatRating } from "@/lib/format";
 import { Award, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export function SubBrandBanner() {
-  const homes = culverGardensHomes();
-  const stats = culverGardensStats(homes);
+  const homes = jacksonCommonsHomes();
+  const stats = jacksonCommonsStats(homes);
 
   return (
     <section className="overflow-hidden rounded-[28px] border border-brand/15 bg-cream">
@@ -19,12 +19,13 @@ export function SubBrandBanner() {
               <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-clay">
                 Host sub-brand
               </p>
-              <h2 className="font-serif text-[1.7rem] leading-none text-brand">{culverGardens.name}</h2>
+              <h2 className="font-serif text-[1.7rem] leading-none text-brand">{jacksonCommons.name}</h2>
             </div>
           </div>
-          <p className="mt-3 text-base font-medium text-brand">{culverGardens.tagline}</p>
+          <p className="mt-3 text-base font-medium text-brand">{jacksonCommons.tagline}</p>
           <p className="mt-1 text-sm text-[#3d3d3d]">
-            Hosted by {culverGardens.host} · Superhost since {culverGardens.superhostSince}
+            Hosted by {jacksonCommons.host} · Superhost since {jacksonCommons.superhostSince} · Shared
+            garden patio beside Jackson Market
           </p>
           <div className="mt-3 flex flex-wrap gap-2 text-sm">
             <span className="rounded-full bg-white px-3 py-1 font-semibold text-ink">
@@ -40,7 +41,7 @@ export function SubBrandBanner() {
             </span>
           </div>
           <Link
-            href="/brand/culver-gardens"
+            href="/brand/jackson-commons"
             className="mt-4 inline-flex rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white"
           >
             View the collection
@@ -54,7 +55,7 @@ export function SubBrandBanner() {
               className="relative h-20 w-28 shrink-0 overflow-hidden rounded-2xl md:aspect-square md:h-auto md:w-auto"
             >
               <Image
-                src={home.images[0] ?? "/photos/p13.jpg"}
+                src={home.images[0] ?? "/photos/jackson-market-patio.jpg"}
                 alt={home.title}
                 fill
                 sizes="120px"
