@@ -24,7 +24,7 @@ export const jacksonCommons = {
   tagline: "Culver City homes kept to one standard — several right next to Jackson Market.",
   pitch:
     "A sub-brand lets one host gather several homes under a name, a standard, and a shared reputation — without leaving the marketplace.",
-  host: "Elena Marlowe",
+  host: "Tony",
   hostSince: 2018,
   superhostSince: 2019,
   location: "Culver City, California",
@@ -54,7 +54,7 @@ export const jacksonCommons = {
     },
   ] satisfies SharedSpacePhoto[],
   story: [
-    "Elena Marlowe has hosted in Culver City since 2018. A number of the Airbnb units sit right next to Jackson Market on Jackson Ave, opening onto a lovely shared outdoor space — a vine-covered lantern walkway and a shaded, string-lit garden patio where guests grab coffee, sandwiches, or groceries next door and linger outside.",
+    "Tony has hosted in Culver City since 2018. A number of the Airbnb units sit right next to Jackson Market on Jackson Ave, opening onto a lovely shared outdoor space — a vine-covered lantern walkway and a shaded, string-lit garden patio where guests grab coffee, sandwiches, or groceries next door and linger outside.",
     "The homes are different shapes — cottages beside Jackson Market, a Hayden Tract loft, a Blair Hills suite — but the stay is meant to feel like the same house. Same linen weight. Same eight things in the kitchen. Same check-in note. Same quiet hours. Guests who liked Fig & Fern can book Willow Walk next time without starting from a blank search.",
     "Jackson Commons is fictional (though Jackson Market is very real). It is here so the idea is obvious: the brand is a layer on top of ordinary listings, not a separate website.",
   ],
@@ -91,7 +91,7 @@ export const jacksonCommons = {
     },
     {
       title: "One host",
-      detail: "Elena answers for the collection. A problem at one home is a brand problem, not a mystery listing.",
+      detail: "Tony answers for the collection. A problem at one home is a brand problem, not a mystery listing.",
     },
   ],
 };

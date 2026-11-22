@@ -8,7 +8,7 @@ Search engines are asked to stay out (`noindex` plus `robots.txt` disallow all).
 
 ## The idea
 
-A host with several similar homes — Elena Marlowe, in this demo — publishes them under one name, **Jackson Commons**, with several units sitting right next to Jackson Market and sharing a lovely garden patio out back. Guests see:
+A host with several similar homes — Tony, in this demo — publishes them under one name, **Jackson Commons**, with several units sitting right next to Jackson Market and sharing a lovely garden patio out back. Guests see:
 
 - a collection banner at the top of Culver City results
 - a “Part of Jackson Commons” badge on each member home
