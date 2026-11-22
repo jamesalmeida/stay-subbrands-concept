@@ -32,6 +32,12 @@ npm start
 
 No environment variables. `next build` is enough for Vercel.
 
+## Stack
+
+Next.js 16 (App Router, Turbopack) with React 19, Tailwind CSS 4, and
+[lucide-react](https://lucide.dev) icons. All sample content is static data in
+`src/data` — no API calls or database.
+
 ## Try the pitch
 
 1. On a phone-width window, open the homepage. The compact **Where to?** pill opens a full-screen search.
@@ -51,3 +57,7 @@ Other sample destinations: Santa Monica, Venice, Silver Lake, Los Feliz, Pasaden
 | `/listing/[id]` | Simple listing detail. |
 | `/wishlists` | Homes saved in this browser. |
 | `/login` | Non-functional login preview. |
+
+See [CHANGELOG.md](CHANGELOG.md) for changes.
+
+<!-- docs-synced-through: e55c60b (2026-11-22) -->
