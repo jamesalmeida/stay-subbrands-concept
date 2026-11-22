@@ -21,21 +21,27 @@ export const jacksonCommons = {
   id: JACKSON_COMMONS_ID,
   name: "Jackson Commons",
   slug: "jackson-commons",
-  tagline: "Culver City homes kept to one standard — several right next to Jackson Market.",
+  tagline: "16 Culver City stays on and around the historic Jackson Market grounds.",
   pitch:
-    "A sub-brand lets one host gather several homes under a name, a standard, and a shared reputation — without leaving the marketplace.",
-  host: "Tony",
-  hostSince: 2018,
+    "A sub-brand lets one host gather a whole neighborhood portfolio under one name, one standard, and one combined reputation — without leaving the marketplace.",
+  host: "Fawaz",
+  hostAvatar: "/photos/jackson-commons/fawaz-avatar.jpg",
+  hostProfileUrl: "https://www.airbnb.com/users/profile/1465311339602795353",
+  hostSince: 2019,
   superhostSince: 2019,
+  yearsHosting: 7,
+  languages: "Arabic, English, French, and Italian",
+  hostBio:
+    "World traveler, citizen of the world, and food is my passion. Please pass by and grab a bite on us at Jackson Market.",
   location: "Culver City, California",
   hero: "/photos/jackson-market-patio.jpg",
-  heroAlt: "String-lit shared garden patio next to Jackson Market in Culver City",
+  heroAlt: "String-lit shared garden patio at Jackson Market in Culver City",
   marketMapUrl: "https://maps.app.goo.gl/vjuubvtsJpjRNzVD7?g_st=ic",
   sharedSpacePhotos: [
     {
       src: "/photos/jackson-market-front.jpg",
       alt: "Jackson Market and Deli storefront with wooden planters and umbrella seating on Jackson Ave",
-      caption: "Jackson Market right next door on Jackson Ave — espresso, sandwiches, and groceries.",
+      caption: "Jackson Market right on Jackson Ave — espresso, deli sandwiches, and groceries since 1925.",
     },
     {
       src: "/photos/jackson-market-breezeway.jpg",
@@ -45,59 +51,67 @@ export const jacksonCommons = {
     {
       src: "/photos/jackson-market-patio.jpg",
       alt: "String-lit shared backyard garden patio with tables and fireplace at dusk",
-      caption: "The lovely shared patio space behind Jackson Market, lit up after dark.",
+      caption: "The shared courtyard patio behind Jackson Market with fire-pit tables, koi pond, and waterfalls.",
     },
     {
       src: "/photos/jackson-market-deli.jpg",
       alt: "Inside Jackson Market and Deli with espresso counter and chalkboard menu",
-      caption: "Morning coffee and deli staples a two-minute walk from the Jackson Ave doors.",
+      caption: "Morning coffee, pastries, wood-fired pizza, and neighborhood staples steps from your door.",
     },
   ] satisfies SharedSpacePhoto[],
   story: [
-    "Tony has hosted in Culver City since 2018. A number of the Airbnb units sit right next to Jackson Market on Jackson Ave, opening onto a lovely shared outdoor space — a vine-covered lantern walkway and a shaded, string-lit garden patio where guests grab coffee, sandwiches, or groceries next door and linger outside.",
-    "The homes are different shapes — cottages beside Jackson Market, a Hayden Tract loft, a Blair Hills suite — but the stay is meant to feel like the same house. Same linen weight. Same eight things in the kitchen. Same check-in note. Same quiet hours. Guests who liked Fig & Fern can book Willow Walk next time without starting from a blank search.",
-    "Jackson Commons is fictional (though Jackson Market is very real). It is here so the idea is obvious: the brand is a layer on top of ordinary listings, not a separate website.",
+    "It started with a 1922 Culver City bungalow whose owner opened Jackson Market next door in 1925. Today, Fawaz hosts 16 distinct stays right on and around the Jackson Market grounds — from koi-pond studios and sunlit courtyard one-bedrooms to a three-floor rooftop loft and family-ready two-bedroom bungalows, all a five-minute walk from downtown Culver City and Sony Pictures Studios.",
+    "Tiled pathways connect the units straight into Jackson Market's shared outdoor world: a century-old neighborhood deli and café, wood-fired pizza oven, shade trees, waterfalls, a pond with koi and turtles, and string-lit fire-pit tables where guests linger with morning espresso or evening wine.",
+    "Jackson Commons is a concept sub-brand showing what Fawaz's real 16-property Culver City portfolio looks like when unified inside a marketplace: one recognizable name on every card, one combined 4.94 rating across 898 reviews, and one home page for the whole collection.",
   ],
   standards: [
     {
-      title: "Hotel-weight linens",
-      detail: "Two sets, the same white, at every home. Towels refresh on stays of five nights or more.",
-    },
-    {
-      title: "The kitchen kit",
-      detail: "Oil, salt, coffee, filters, tea, soap, a sponge, and a short spice rack. Nothing gourmet. Nothing missing.",
-    },
-    {
-      title: "A real desk",
-      detail: "Task lamp, outlet, and a chair you can sit in for a workday. Wifi is meant to clear 300 Mbps.",
-    },
-    {
-      title: "Same check-in",
-      detail: "Self check-in before 3pm. The lock instructions read the same way at every door.",
-    },
-    {
-      title: "Shared space & patios",
+      title: "Shared Jackson Market grounds",
       detail:
-        "The Jackson Ave units share the lovely shaded garden patio and lantern walkway next to Jackson Market; every other home has its own patio or garden.",
+        "Tiled paths open onto the koi pond, waterfalls, fire-pit tables, café, deli, and wood-fired pizza oven — right downstairs or a short stroll down the block.",
     },
     {
-      title: "Quiet hours",
-      detail: "10pm to 8am, written on the brand page so guests see the rule before they book.",
-    },
-    {
-      title: "Neighborhood card",
+      title: "Walkable Culver City core",
       detail:
-        "The same printed Culver City card: starting with Jackson Market next door for morning coffee and sandwiches, plus where not to bother parking.",
+        "Five minutes on foot to downtown Culver City restaurants, bars, and Sony Pictures Studios, with easy neighborhood parking.",
     },
     {
-      title: "One host",
-      detail: "Tony answers for the collection. A problem at one home is a brand problem, not a mystery listing.",
+      title: "Private outdoor space",
+      detail:
+        "From fenced waterfall backyards and rooftop fire-pit terraces to sunlit patios and shared BBQ courtyards, every stay leans into indoor-outdoor living.",
+    },
+    {
+      title: "Work-ready & fast wifi",
+      detail:
+        "Dedicated desks, fast wifi, central air, and smart TVs loaded with streaming apps — built for studio shoots, work trips, and multi-week stays.",
+    },
+    {
+      title: "Easy keypad check-in",
+      detail: "Self check-in by keypad after 3pm across every unit, with consistent arrival instructions.",
+    },
+    {
+      title: "Thoughtful kitchens & baths",
+      detail:
+        "Well-equipped kitchens (from gas ranges to chef islands), plush king beds, and spa-style touches like heated tile floors in the boutique building.",
+    },
+    {
+      title: "16 layouts, one host",
+      detail:
+        "Book a solo studio, a boutique patio room, or a two-bedroom bungalow with the same Superhost — Fawaz — behind every door.",
+    },
+    {
+      title: "Built for repeat stays",
+      detail:
+        "Guests return across different units as their trips change, knowing the market, the patios, and the hosting stay just as warm.",
     },
   ],
 };
 
 export function jacksonCommonsHomes(): Listing[] {
-  return listingsByBrand(JACKSON_COMMONS_ID).sort((a, b) => b.rating - a.rating);
+  return listingsByBrand(JACKSON_COMMONS_ID).sort((a, b) => {
+    if (b.rating !== a.rating) return b.rating - a.rating;
+    return b.reviewCount - a.reviewCount;
+  });
 }
 
 export function jacksonCommonsStats(homes: Listing[] = jacksonCommonsHomes()) {
@@ -116,50 +130,34 @@ export function jacksonCommonsStats(homes: Listing[] = jacksonCommonsHomes()) {
 export const brandReviews: BrandReview[] = [
   {
     id: "r1",
-    author: "Priya S.",
-    date: "October 2026",
+    author: "Sandy",
+    date: "Recent stay",
     rating: 5,
-    text: "We stayed at Fig & Fern this fall and The Orchard House last spring. Both sit right next to Jackson Market — morning coffee in the shared garden patio, plus the exact same linens and check-in note.",
-    home: "Fig & Fern Cottage",
+    text: "As former residents of Culver City, it was a pleasure to stay at Fawaz's place. Great location, so convenient to have the famous Jackson Market downstairs, beautiful patio to enjoy.",
+    home: "Jackson Market Courtyard",
   },
   {
     id: "r2",
-    author: "Marcus L.",
-    date: "September 2026",
+    author: "Steve",
+    date: "Recent stay",
     rating: 5,
-    text: "I booked The Citrus Loft because the card said Jackson Commons. I already trusted the cottage by the market. The loft is a different building and the same stay.",
-    home: "The Citrus Loft",
+    text: "The rooms at Jackson Market are well-curated. The Market itself is central to all of the Culver City staples. There is ample parking nearby, and the whole area is walkable.",
+    home: "Boutique Building at Jackson Market",
   },
   {
     id: "r3",
-    author: "Helen K.",
-    date: "August 2026",
+    author: "Deborah",
+    date: "Recent stay",
     rating: 5,
-    text: "Lantern Court is tiny. The standard is not. Walking through the vine-covered breezeway to Jackson Market and sitting in the shared patio made the studio feel twice as big.",
-    home: "Lantern Court Studio",
+    text: "Had a wonderful stay and would highly recommend these apartments. In fact so good we have rebooked again for 3 more visits over the next few months. Jackson Market is a beautiful and very special place and we spent many of our mornings relaxing outside in the gardens.",
+    home: "Jackson Market Apartments",
   },
   {
     id: "r4",
-    author: "Andre W.",
-    date: "July 2026",
-    rating: 4,
-    text: "Willow Walk fit our family. The combined rating made me less nervous about a townhouse we had never seen. Individual reviews were still right there.",
-    home: "Willow Walk Townhouse",
-  },
-  {
-    id: "r5",
-    author: "Sofia A.",
-    date: "June 2026",
+    author: "Rebecca",
+    date: "Recent stay",
     rating: 5,
-    text: "Garden Suite at Haynes feels like a different house and the same host. The neighborhood card sent us straight to Jackson Market for sandwiches and the back patio.",
-    home: "Garden Suite at Haynes",
-  },
-  {
-    id: "r6",
-    author: "Ben C.",
-    date: "May 2026",
-    rating: 5,
-    text: "I would not have tried a second Culver City address from a stranger. I tried a second address from Jackson Commons. That is the whole product.",
-    home: "The Orchard House",
+    text: "Perfect stay, wonderful place. Great onsite pizza restaurant and delicatessen, and the owners are incredibly friendly and helpful. Will be back!",
+    home: "Jackson Market Grounds",
   },
 ];

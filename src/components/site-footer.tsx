@@ -7,9 +7,9 @@ export function SiteFooter() {
         <div>
           <p className="font-semibold text-ink">Concept mockup, not affiliated with Airbnb.</p>
           <p className="mt-2 max-w-xl">
-            Fictional listings, hosts, and reviews. Home photography is stock from Unsplash, used
-            under the Unsplash License, alongside Jackson Market &amp; Deli photos from Google Maps.
-            No booking is real.
+            Concept pitch mockup featuring Fawaz’s 16 Culver City listings around Jackson Market
+            grouped under the Jackson Commons sub-brand concept, alongside fictional LA sample
+            stays. No booking is real.
           </p>
         </div>
         <div className="flex flex-wrap gap-x-4 gap-y-2 font-semibold text-ink">

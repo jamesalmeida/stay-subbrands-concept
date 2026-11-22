@@ -3,7 +3,7 @@ import { PhotoGallery } from "@/components/photo-gallery";
 import { ReserveButton } from "@/components/reserve-button";
 import { getListing, listings } from "@/data/listings";
 import { formatRating, money } from "@/lib/format";
-import { Star } from "lucide-react";
+import { ExternalLink, Star } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -82,7 +82,25 @@ async function ListingDetail({ params }: { params: Promise<{ id: string }> }) {
               </li>
             ))}
           </ul>
-          <p className="mt-8 text-sm text-muted">Hosted by {listing.host}. Fictional listing.</p>
+          <p className="mt-8 text-sm text-muted">
+            Hosted by {listing.host}.{" "}
+            {listing.airbnbUrl ? (
+              <>
+                Concept preview of a real Culver City listing.{" "}
+                <a
+                  href={listing.airbnbUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1 font-semibold text-ink underline underline-offset-2"
+                >
+                  View on Airbnb
+                  <ExternalLink size={13} aria-hidden="true" />
+                </a>
+              </>
+            ) : (
+              "Fictional listing."
+            )}
+          </p>
         </div>
         <aside className="rounded-3xl border border-[#ebebeb] p-5 shadow-[0_6px_16px_rgba(0,0,0,0.08)] md:sticky md:top-40">
           <p className="text-xl">

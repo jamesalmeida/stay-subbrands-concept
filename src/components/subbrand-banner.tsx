@@ -24,8 +24,8 @@ export function SubBrandBanner() {
           </div>
           <p className="mt-3 text-base font-medium text-brand">{jacksonCommons.tagline}</p>
           <p className="mt-1 text-sm text-[#3d3d3d]">
-            Hosted by {jacksonCommons.host} · Superhost since {jacksonCommons.superhostSince} · Shared
-            garden patio beside Jackson Market
+            Hosted by {jacksonCommons.host} · Superhost · {jacksonCommons.yearsHosting} years hosting
+            · Shared garden patio at Jackson Market
           </p>
           <div className="mt-3 flex flex-wrap gap-2 text-sm">
             <span className="rounded-full bg-white px-3 py-1 font-semibold text-ink">
@@ -48,7 +48,7 @@ export function SubBrandBanner() {
           </Link>
         </div>
         <div className="no-scrollbar -mx-1 flex gap-2 overflow-x-auto px-1 md:grid md:grid-cols-3 md:overflow-visible">
-          {homes.map((home) => (
+          {homes.slice(0, 6).map((home) => (
             <Link
               key={home.id}
               href={`/listing/${home.id}`}

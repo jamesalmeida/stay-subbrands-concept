@@ -2,13 +2,13 @@
 
 A mobile-first concept mockup for a pitch: hosts can bundle several homes into a branded sub-brand inside a vacation-rental marketplace.
 
-**Concept mockup, not affiliated with Airbnb.** Listings, hosts, reviews, and Jackson Commons are fictional (while Jackson Market & Deli in Culver City is real). Home photos are stock images from Unsplash (Unsplash License), stored in `public/photos`, alongside Jackson Market photos from Google Maps. The wordmark is plain styled text. Icons are from [Lucide](https://lucide.dev). Nothing here is scraped from Airbnb.
+**Concept mockup, not affiliated with Airbnb.** The **Jackson Commons** sub-brand concept groups Fawaz's 16 real Culver City listings around Jackson Market & Deli, alongside fictional Los Angeles sample stays using Unsplash stock photos (stored in `public/photos`). The wordmark is plain styled text. Icons are from [Lucide](https://lucide.dev).
 
 Search engines are asked to stay out (`noindex` plus `robots.txt` disallow all).
 
 ## The idea
 
-A host with several similar homes — Tony, in this demo — publishes them under one name, **Jackson Commons**, with several units sitting right next to Jackson Market and sharing a lovely garden patio out back. Guests see:
+A host with several similar homes — Fawaz, with 16 Culver City stays on and around the Jackson Market grounds — publishes them under one name, **Jackson Commons**, highlighting the shared courtyard, koi pond, fire-pit patios, and historic market right next door. Guests see:
 
 - a collection banner at the top of Culver City results
 - a “Part of Jackson Commons” badge on each member home

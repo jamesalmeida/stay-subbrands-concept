@@ -7,7 +7,7 @@ import {
   jacksonCommonsStats,
 } from "@/data/brand";
 import { formatRating } from "@/lib/format";
-import { Award, Check, MapPin, Star } from "lucide-react";
+import { Award, Check, ExternalLink, MapPin, Star } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +15,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Jackson Commons",
   description:
-    "Fictional host sub-brand: six Culver City homes, several right next to Jackson Market with a shared garden space, one standard, one combined reputation.",
+    "Host sub-brand concept featuring Fawaz's 16 Culver City listings on and around the historic Jackson Market grounds.",
 };
 
 export default function JacksonCommonsPage() {
@@ -47,15 +47,38 @@ export default function JacksonCommonsPage() {
           <p className="mt-2 max-w-3xl text-xl font-semibold leading-snug md:text-2xl">
             {jacksonCommons.pitch}
           </p>
-          <div className="mt-5 flex flex-wrap items-center gap-3">
-            <BrandMark />
-            <div>
-              <p className="font-semibold">{jacksonCommons.host}</p>
-              <p className="text-sm text-muted">
-                Hosting since {jacksonCommons.hostSince} · Superhost since {jacksonCommons.superhostSince}
-              </p>
+          <div className="mt-5 flex flex-wrap items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full ring-2 ring-brand/15">
+                <Image
+                  src={jacksonCommons.hostAvatar}
+                  alt={jacksonCommons.host}
+                  fill
+                  sizes="48px"
+                  className="object-cover"
+                />
+              </div>
+              <BrandMark className="h-12 w-12 text-lg" />
+              <div>
+                <p className="font-semibold">Hosted by {jacksonCommons.host}</p>
+                <p className="text-sm text-muted">
+                  Superhost · {jacksonCommons.yearsHosting} years hosting · Lives in{" "}
+                  {jacksonCommons.location}
+                </p>
+                <p className="text-xs text-muted">Speaks {jacksonCommons.languages}</p>
+              </div>
             </div>
+            <a
+              href={jacksonCommons.hostProfileUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-full border border-[#dddddd] px-4 py-2 text-sm font-semibold text-ink hover:border-ink"
+            >
+              Airbnb host profile
+              <ExternalLink size={14} aria-hidden="true" />
+            </a>
           </div>
+          <p className="mt-4 max-w-3xl text-sm italic text-[#444]">“{jacksonCommons.hostBio}”</p>
           <dl className="mt-6 grid grid-cols-3 gap-3 text-center">
             <div className="rounded-2xl bg-cream px-2 py-4">
               <dt className="text-xs font-semibold uppercase tracking-wide text-muted">Homes</dt>
@@ -154,7 +177,7 @@ export default function JacksonCommonsPage() {
           <h2 className="font-serif text-3xl text-brand">What guests say about the collection</h2>
           <p className="mt-2 max-w-2xl text-muted">
             Reviews stay on each home. They also roll up here, so the brand earns trust as a group.
-            These quotes are fictional.
+            Excerpts from guest reviews across Fawaz’s Jackson Market stays.
           </p>
           <ul className="mt-6 grid gap-4 md:grid-cols-2">
             {brandReviews.map((review) => (

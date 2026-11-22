@@ -43,13 +43,22 @@ export function shouldShowJacksonCommons(where: string, results: Listing[]): boo
   const hasBrand = results.some((listing) => listing.brandId === JACKSON_COMMONS_ID);
   if (!hasBrand || results.length === 0) return false;
   const normalized = where.trim().toLowerCase();
-  if (normalized.includes("culver") || normalized.includes("jackson")) return true;
+  if (
+    normalized.includes("culver") ||
+    normalized.includes("jackson") ||
+    normalized.includes("fawaz")
+  ) {
+    return true;
+  }
   return results.every((listing) => listing.city === "Culver City");
 }
 
 export function orderResults(where: string, results: Listing[]): Listing[] {
   const normalized = where.trim().toLowerCase();
-  const pinBrand = normalized.includes("culver") || normalized.includes("jackson");
+  const pinBrand =
+    normalized.includes("culver") ||
+    normalized.includes("jackson") ||
+    normalized.includes("fawaz");
   return [...results].sort((a, b) => {
     if (pinBrand) {
       const brandA = a.brandId === JACKSON_COMMONS_ID ? 1 : 0;
