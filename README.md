@@ -14,7 +14,7 @@ A host with several similar homes — Fawaz, with 16 Culver City stays on and ar
 - a “Part of Jackson Commons” badge on each member home
 - a brand page with the story, the shared space next to Jackson Market, the shared standard, combined reviews, and the homes
 
-Each home keeps its own price, photos, and listing page. The brand is a layer on top.
+Each home keeps its own price, photos, and listing page. The brand is a layer on top. The 16 member homes carry Fawaz's real details and link to their Airbnb pages; the sample stays around them are fictional.
 
 ## Run
 
@@ -58,6 +58,8 @@ Other sample destinations: Santa Monica, Venice, Silver Lake, Los Feliz, Pasaden
 | `/wishlists` | Homes saved in this browser. |
 | `/login` | Non-functional login preview. |
 
+`/brand/culver-gardens` permanently redirects to `/brand/jackson-commons`.
+
 See [CHANGELOG.md](CHANGELOG.md) for changes.
 
-<!-- docs-synced-through: e55c60b (2026-11-22) -->
+<!-- docs-synced-through: daed9a4 (2026-11-23) -->
